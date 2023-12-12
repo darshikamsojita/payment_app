@@ -39,7 +39,8 @@ class _PaymentScreenState extends State<PaymentScreen> {
   }
 
   void _handlePaymentError(PaymentFailureResponse response) {
-    debugPrint("payment fail ${response.message}");
+    debugPrint("payment fail code ::: ${response.code}");
+    debugPrint("payment fail message ::: ${response.message}");
   }
 
   void _handleExternalWallet(ExternalWalletResponse response) {
